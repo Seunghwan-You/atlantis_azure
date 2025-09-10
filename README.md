@@ -26,7 +26,7 @@ atlantis.yaml: 프로젝트/워크플로우 설정
 - PR 생성 시 자동으로 `init/plan` 실행 (atlantis.yaml의 `autoplan`)
 - 승인 후 `atlantis apply`로 반영
 
-백엔드가 설정되어 있으므로, Atlantis 서버에서 Azure 권한(Managed Identity 또는 `ARM_*` env)과 tfstate 스토리지가 접근 가능한 네트워크가 필요합니다.
+tfstate 파일 관리를 위한 백엔드가 설정되어 있으므로, Atlantis 서버에서 Azure 권한(Service Principal)과 스토리지에 접근 가능한 네트워크가 필요합니다.
 
 ## 진행 방법
 - 환경별 `main.tf`의 리소스/모듈 블록은 주석 처리되어 있습니다. 가이드를 따라 단계별로 주석을 해제하고 Pull Request를 만들면 Atlantis가 `plan`을 수행합니다. 승인 후 `atlantis apply`로 실제 배포를 진행하세요.

@@ -30,7 +30,7 @@ atlantis.yaml: 프로젝트/워크플로우 설정
 
 ## 진행 방법
 - 환경별 `main.tf`의 리소스/모듈 블록은 주석 처리되어 있습니다. 가이드를 따라 단계별로 주석을 해제하고 Pull Request를 만들면 Atlantis가 `plan`을 수행합니다. 승인 후 `atlantis apply`로 실제 배포를 진행하세요.
-- 상세한 단계별 설명은 블로그 포스트를 참고하세요: https://skyops.dev
+- 상세한 단계별 설명은 블로그 포스트를 참고하세요: https://skyops.dev/posts/terraform-atlantis-azure-gitops-guide
 
 ## 참고
 - 기본 리전: `koreacentral`

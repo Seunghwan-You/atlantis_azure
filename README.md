@@ -29,7 +29,7 @@ atlantis.yaml: 프로젝트/워크플로우 설정
 tfstate 파일 관리를 위한 백엔드가 설정되어 있으므로, Atlantis 서버에서 Azure 권한(Service Principal)과 스토리지에 접근 가능한 네트워크가 필요합니다.
 
 ## 진행 방법
-- 환경별 `main.tf`의 리소스/모듈 블록은 주석 처리되어 있습니다. 가이드를 따라 단계별로 주석을 해제하고 Pull Request를 만들면 Atlantis가 `plan`을 수행합니다. 승인 후 `atlantis apply`로 실제 배포를 진행하세요.
+- prod 환경 `main.tf`의 리소스 블록은 주석 처리되어 있습니다. 가이드를 따라 dev환경으로 테스트를 진행 후 prod환경은 개별적으로 진행해보시기 바랍니다.
 - 상세한 단계별 설명은 블로그 포스트를 참고하세요: https://skyops.dev/posts/terraform-atlantis-azure-gitops-guide
 
 ## 참고
